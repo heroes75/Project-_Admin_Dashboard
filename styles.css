@@ -7,6 +7,8 @@ iconify-icon {
     display: inline-block;
     width: 1em;
     height: 1em;
+    margin: 0;
+    padding: 0;
    }
 html, body {
     height: 100%;
@@ -16,7 +18,7 @@ html, body {
     background-color: blue;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 20% 30% 40%;
+    grid-template-rows: 14% 43% 33%;
     /* gap: 19px; */
 }
 header {
@@ -29,7 +31,7 @@ header {
 }
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows:20% 80%;
 }
 .dashboard {
@@ -37,11 +39,12 @@ body {
     font-weight: 700;
     display: grid;
     grid-template-columns: 25% 75%;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 2rem 15px 10px;
 }
 .dashboard > div {
     justify-self: start;
     align-self: center;
+    font-size: 1em;
 }
 .dashboard > svg {
     justify-self: center;
@@ -49,6 +52,25 @@ body {
 }
 .sidebard-list-1, .sidebard-list-2 {
     list-style: none;
+    display: grid;
+    margin: 0 0 0 15px;
+    padding: 0%;
+    gap: 13px;
+}
+.sidebard-list-1  div, .sidebard-list-2 div {
+    font-size: 1.1rem;
+    font-weight: 600;
+    align-self: center;
+}
+.sidebard-list-1 li, .sidebard-list-2 li {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 33px;
+} 
+.sidebard-list-1 iconify-icon {
+    justify-self: start;
+    align-self: start;
+
 }
 header {
     display: grid;
@@ -61,3 +83,10 @@ header {
 /* .project {
     
 } */
+ h3 {
+    font-family: "Playwrite AU SA", serif;
+    font-size: 1.3rem;
+ }
+ .project p {
+    font-family: "Mulish", serif;
+}
