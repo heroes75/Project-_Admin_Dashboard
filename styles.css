@@ -23,11 +23,89 @@ html, body {
 }
 header {
     width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+.search-bar {
+    display: grid;
+    grid-template-columns: 70px auto 10% 20%;
+    align-items: center;
+    gap: 1em;
+}
+.user-image {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+}
+input {
+    display: inline-block;
+    width: calc(100% - 5em);
+    height: 2.2em;
+    margin-top: 7px;
+    border-radius: 50px;
+}
+
+.logo-search-bar {
+    justify-self: end;
+}
+.logo-notif {
+    justify-self: center;
+    margin-left: 2em;
+}
+.user-logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 0.5em;
+    margin-right: 2em;
+}
+.user-info {
+    display: grid;
+    grid-template-columns: 70px auto;
+    gap: 15px;
+    margin-left: 30px ;
 
 }
+.user-name-1 {
+    align-self: center;
+    font-weight: 700;
+    font-size: 1.em;
+}
+.user-image2 {
+    width: 50px;
+    border-radius: 50%;
+    justify-self: end;
+    align-self: center;
+}
+.user-name-2 {
+    justify-self: start;
+    align-self: center;
+    font-weight: 700;
+
+} 
+.user-name-2::before {
+    font-weight: lighter;
+    font-size: small;
+    display: block;
+    content: "there, here";
+}
+.button {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+button {
+    padding: 5px 30px 5px 30px;
+    border-radius: 50px;
+    height: 100%;
+    font-weight: 700;
+    background-color: blue;
+}
+
 .main-content {
    background-color: brown;
-
 }
 body {
     display: grid;
@@ -72,11 +150,7 @@ body {
     align-self: start;
 
 }
-header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-}
+
 .search-bar {
     grid-column: 1 / 3;
 }
