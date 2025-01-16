@@ -13,6 +13,14 @@ iconify-icon {
 html, body {
     height: 100%;
 }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+    overflow: scroll;
+}
+
 .sidebard {
     height: 100%;
     background-color: blue;
@@ -106,12 +114,29 @@ button {
 
 .main-content {
    background-color: brown;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
 }
-body {
+
+.project-container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows:20% 80%;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 3%; 
 }
+
+.project-container::before {
+    content: "Your Project";
+    position: absolute;
+}
+.trending {
+    grid-column: 2 / 3;
+
+}
+
 .dashboard {
     font-size: 1.8rem;
     font-weight: 700;
