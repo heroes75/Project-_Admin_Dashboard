@@ -122,7 +122,7 @@ button {
 .main-content {
    background-color: #e5e7eb;
    display: grid;
-   grid-template-columns: 3fr 1fr;
+   grid-template-columns: 5fr 1fr;
 }
 
 .project-container {
